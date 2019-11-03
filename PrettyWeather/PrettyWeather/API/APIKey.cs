@@ -9,6 +9,6 @@ namespace PrettyWeather.API
         /// <summary>
         /// The API key for the openweathermap.org API. Please create your own key on the website, if this key does not work in the future
         /// </summary>
-        public static readonly string getKey = "fa79cc0e1c91e240c7e92bab5d521765";
+        public static readonly string getKey = "b6907d289e10d714a6e88b30761fae22";
     }
 }

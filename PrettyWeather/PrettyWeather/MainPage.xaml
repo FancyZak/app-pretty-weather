@@ -12,7 +12,7 @@
     x:Name="WeatherPage"
     mc:Ignorable="d">
     <ContentPage.BindingContext>
-        <viewmodel:WeatherViewModel Temp="61"/>
+        <viewmodel:WeatherViewModel/>
     </ContentPage.BindingContext>
 
     <pancake:PancakeView BackgroundGradientStartColor="{Binding Temp, Converter={converters:BackgroundColorConverter IsStart=True}}"
@@ -30,7 +30,7 @@
             </Grid.RowDefinitions>
             <Label
                 HorizontalOptions="Center"
-                Text="SEATTLE" 
+                Text="{Binding City}" 
                 FontSize="Large"
                 TextColor="{StaticResource MainTextColor}"/>
             <Image Grid.Row="1"
@@ -59,17 +59,23 @@
             <Label
                 Grid.Row="3"
                 HorizontalOptions="Center"
-                Text="SUNNY" 
+                Text="{Binding WeatherCondition}" 
                 FontSize="Large"
                 TextColor="{StaticResource MainTextColor}"/>
             <Label
                 Grid.Row="4"
                 HorizontalOptions="Center"
-                Text="FRIDAY, SEPTEMBER 13" 
+                Text="{Binding WeatherDescription}" 
+                FontSize="Caption"
+                TextColor="{StaticResource MainTextColor}"/>
+            <Label
+                Grid.Row="5"
+                HorizontalOptions="Center"
+                Text="{Binding Date}" 
                 FontSize="Small"
                 TextColor="{StaticResource MainTextColor}"/>
 
-            <CollectionView Grid.Row="5" Margin="0,20" 
+            <CollectionView Grid.Row="6" Margin="0,20" 
                             HeightRequest="80" 
                             VerticalOptions="End"
                             ItemsLayout="HorizontalList">

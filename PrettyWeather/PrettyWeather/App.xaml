@@ -7,8 +7,8 @@
              x:Class="PrettyWeather.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="ColdStartColor">#BDE3FA</Color>
-            <Color x:Key="ColdEndColor">#A5C9FD</Color>
+            <Color x:Key="ColdStartColor">#0e7abe</Color>
+            <Color x:Key="ColdEndColor">#82b5fc</Color>
             <Color x:Key="WarmStartColor">#F6CC66</Color>
             <Color x:Key="WarmEndColor">#FCA184</Color>
             <Color x:Key="NightStartColor">#172941</Color>
